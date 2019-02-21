@@ -1,0 +1,30 @@
+1. Khai bao:
+Random rd = new Random();
+2. 
+2.1: nextInt() : tra ve 1 so ngau nhien co kieu int
+2.3: nextInt(int n): tra ve gia tri int ngau nhien, phan phoi dong deu giua 0(da bao gom) va gia tri duoc chi dinh(loai tru),
+duoc rut ra tu chuoi trinh tao so ngau nhien nay.
+2.2: nextFloat() : tra ve 1 so ngau nhien co kieu float
+2.3: nextDouble() : tra ve 1 so ngau nhien co kieu double 
+2.4: nextLong() : tra ve 1 so ngau nhien co kieu Long
+2.5: nextBoolean() : tra ve 1 bien ngau nhien co gia tri true or false
+2.6: nextBytes(byte[] bytes) : tao cac byte ngau nhien va dat chung vao mot mang byte do nguoi dung cung cap
+2.7: nextGaussian(): tra ve gia tri nhan doi phan phoi ngau hien, Gaussian("nomally") voi gia tri trung binh
+0,0 va do lech chuan 1.0 tu chuoi trinh tao so ngau nhien nay.
+2.8: setSeed(long seed): Dat gia tri khoi dau cua qua trinh tao so ngau nhien nay bang mot gia tri long duy nhat
+2.9: next(int bits): tao so gia danh tiep theo
+2.10: longs(long streamSize, long randomNumberOrigin, long randomNumberBound): tra ve 1 luong tao ra so luong gia dinh cua luong dai nhat dinh, moi luong phu hop voi nguon goc da cho(bao gom) va rang buoc (loai tru)
+2.11: longs(long randomNumberOrigin, long randomNumberBound): tra ve 1 luong gia tri gia ngau nhien khong gioi han 1 cach hieu qua, moi gia tri tuan theo nguon goc da cho(bao gom) va rang buoc(doc quyen)
+2.12: longs(long streamSize): tra ve 1 luong so luong gia tri dai cua cac gia tri gia ngau nhien
+2.13: longs(): tra ve 1 luong gia tri long gia khong gioi han hieu qua
+2.14: doubles(): tra ve 1 luong gia tri kep gia ngau nhien khong gioi han, moi gia tri tu 0(bao gom) va 1 (doc quyen)
+2.15: doubles(double randomNumberOrigin, double randomNumberBound): tra ve 1 luong gia tri kep gia ngau nhien khong gioi han, moi gia tri
+tuan theo nguon goc da cho(bao gom) va rang buoc(doc quyen).
+2.16: doubles(long streamSize): tra ve 1 luong tao ra so luong gia tri gap doi cua cac gia tri gia ngau nhien, moi gia tri tu 0 (bao gom)va 1(doc quyen)
+2.17: doubles(long streamSize, double randomNumberOrigin, double randomNumberBound): tra ve 1 luong tao ra so luong gia tri gap doi cua cac gia tri gia ngau nhien,
+moi gia tri tuan theo nguon goc da cho (bao gom) va rang buoc (loai tru).
+2.18: ints(): tra ve 1 luong gia tri int gia ngau nhien khong gioi han
+2.19: ints(int randomNumberOrigin, int randomNumberBound): tra ve 1 luong gia tri int ngau nhien khong gioi han hieu qua, moi gia tri tuan theo nguon goc da cho(bao gom) va rang buoc(loai tru)
+2.20: ints(long streamSize): tra ve 1 luong tao ra so luong cac gia tri int gia ngau nhien da cho.
+2.21: ints(long streamSize, int randomNumberOrigin, int randomNumberBound): tra ve 1 luong tao ra so luong gia tri int ngau nhien gia dinh cua luong, moi gia tri tuan theo nguon goc da cho(bao gom) va rang buoc(loai tru)
+
