@@ -1,0 +1,26 @@
+1.
+java.lang.Object
+->java.text.Format
+-->java.text.DateFormat
+--->java.text.SimpleDateFormat
+2. Constructors
+2.1: SimpleDateFormat() : su dung cac ki hieu dinh dang mau va ngay mac dinh cho mien format local mac dinh
+2.2: SimpleDateFormat(String pattern): su dung mau da cho va ki hieu dinh dang ngay mac dinh cho format local mac dinh
+2.3: SimpleDateFormat(String pattern, DateFormatSymbols formatSymbols): su dung mau da cho ki hieu dinh dang ngay
+2.4: SimpleDateFormat(String pattern, Locale locale): su dung mau da cho va ki hieu dinh dang ngay mac dinh cho mau local
+3. Methods
+3.1: applyLocalizedPattern(String pattern): ap dung cho dinh dang chuoi local sang ngay
+3.2: applyPattern(String pattern): ap dung cho dinh dang chuoi sang ngay
+3.3: clone(): tao 1 ban sao chep cua SimpleDateFormat
+3.4: equals(Object obj): so sanh doi tuong da cho voi SimpleDateFormat
+3.5: format(Date date, StringBuffer toAppendTo, FieldPosition pos): Dinh dang ngay da cho thanh 1 chuoi day/time va noi voi ket qua vao StringBuffer da cho.
+3.6: formatToCharacterIterator(Object obj): Dinh dang mot doi tuong tao ra 1 AttributedCharacterIterator.
+3.7: get2DigitYearStart(): tra ve ngay bat dau cua giai doan 100-nam trong khoang 2 chu so
+3.8: getDateFormatSymbols(): Nhan mot ban sao cua cac ki hieu dinh dang ngay va thoi gian cua dinh dang ngay nay
+3.9: hashCode(): tra ve gai tri hash code (ma bam) cho doi tuong cua SimpleDateFormat nay
+3.10: parse(String text, ParsePosition pos): Chuyen text tu dang string sang date
+3.11: set2DigitYearStart(Date startDate): thiet lap 100 nam khoang 2 chu so se duoc hieu la bat dau ngay ma nguoi dung chi dinh
+3.12: setDateFormatSymbols(DateFormatSymbols newFormatSymbols): thiet lap dinh dang ki tu ngay va thoi gian cua dinh dang ngay nay
+3.13: toLocalizedPattern(): tra ve gia tri chuoi local mieu ta cho dinh dang ngay nay
+3.14: toPattern(): tra ve gia tri chuoi mieu ta cho dinh dang ngay nay.
+

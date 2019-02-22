@@ -1,0 +1,18 @@
+1.
+java.lang.Object
+->java.util.StringTokenizer
+2. 
+public class StringTokenizer extends Object implements Enumeration<Object>
+3. Constructors:
+3.1: StringTokenizer(String str) : constructor cho chuoi duoc chi dinh
+3.2: StringTokenizer(String str, String delim): constructor cho chuoi duoc chi dinh
+3.3: StringTokenizer(String str, String delim, boolean returnDelims): constructor cho chuoi duoc chi dinh
+4. Methods:
+4.1: countTokens(): tinh so lan ma phuong thuc nextToken cua ma thong bao nay co the duoc goi truoc khi no tao ra ngoai le
+4.2: hasMoreElements(): tra ve cung gia tri nhu phuong thuc hashMoreTokens
+4.3: hasMoreTokens(): kiem tra neu co nhieu ma thong bao kha thi tu chuoi Tokenizer's
+4.4: nextElement(): tra ve cung gia tri nhu phuong thuc nextToken, ngoai le ma no khai bao tra ve gia tri la doi tuong hon la chuoi 
+4.5: nextToken(): tra ve gia tri tiep theo cua ma thong bao tu chuoi Tokenizer nay.
+4.6: nextToken(String delim): tra ve gia tri tiep theo cua ma thong bao trong chuoi cua chuoi tokenizer's nay.
+
+
