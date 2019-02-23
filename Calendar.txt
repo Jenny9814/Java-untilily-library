@@ -1,0 +1,65 @@
+1.
+java.lang.Object
+->java.util.Calendar
+2. 
+public abstract class Calendar extends Object implements Serializable, Cloneable, Comparable<Calendar>
+3. Constructors
+3.1: Calendar(): Vung thoi gian mac dinh va Format cuc bo mac dinh
+3.2: Calendar(TimeZone zone, Locale aLocale): vung thoi gian va cuc bo duoc chi dinh
+4. Methods
+4.1: add(int field, int amount): them hoac tru luong thoi gian da chi dinh vao truong lich da cho, dua tren quy tac cua lich
+4.2: after(Object when): tra ve lich nay bieu thi thoi gian sau thoi gian duoc bieu thi boi doi tuong da chi dinh
+4.3: before(Object when): tra ve lich nay bieu thi thoi gian truoc khi thoi gian duoc bieu thi boi doi tuong da duoc chi dinh
+4.4: clear():thiet lap tat ca cac gia tri cua truong lich va gia tri thoi gian cua Calendar khong xac dinh
+4.5: clear(int field): thiet lap cac gia tri cua truong lich da cho va gia tri thoi gian cua Calendar khong xac dinh
+4.6: clone(): khoi tao va tra ve ban sao chep cua doi tuong nay
+4.7: compareTo(Calendar anotherCalendar)
+4.8: complete()
+4.9: computeFields()
+4.10: computeTime()
+4.11: equals(Object obj)
+4.12: get(int field)
+4.13: getActualMaximum(int field)
+4.14: getActualMinimum(int field)
+4.15: getAvailableCalendarTypes()
+4.16: getAvailableLocales()
+4.17: getCalendarType()
+4.18: getDisplayName(int field, int style, Locale locale)
+4.19: getDisplayNames(int field, int style, Locale locale)
+4.20: getFirstDayOfWeek()
+4.21: getGreatestMinimum(int field)
+4.22: getInstance()
+4.23: getInstance(Locale aLocale)
+4.24: getInstance(TimeZone zone)
+4.25: getInstance(TimeZone zone, Locale aLocale)
+4.26: getLeastMaximum(int field)
+4.27: getMaximum(int field)
+4.28: getMinimalDaysInFirstWeek()
+4.29: getMinimum(int field)
+4.30: getTime()
+4.31: getTimeInMillis()
+4.32: getTimeZone()
+4.33: getWeeksInWeekYear()
+4.34: getWeekYear()
+4.35: hashCode()
+4.36: internalGet(int field)
+4.37: isLenient()
+4.38: isSet(int field)
+4.39: isWeekDateSupported()
+4.40: roll(int field, boolean up)
+4.41: roll(int field, int amount)
+4.42: set(int field, int value)
+4.43: set(int year, int month, int date)
+4.44: set(int year, int month, int date, int hourOfDay, int minute)
+4.45: set(int year, int month, int date, int hourOfDay, int minute, int second)
+4.46: setFirstDayOfWeek(int value)
+4.47: setLenient(boolean lenient)
+4.48: setMinimalDaysInFirstWeek(int value)
+4.49: setTime(Date date)
+4.50: setTimeInMillis(long millis)
+4.51: setTimeZone(TimeZone value)
+4.52: setWeekDate(int weekYear, int weekOfYear, int dayOfWeek)
+4.53: toInstant()
+4.54: toString()
+
+
