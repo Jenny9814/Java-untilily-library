@@ -7,53 +7,53 @@ java.lang.Object
 -->java.text.NumberFormat
 --->java.text.DecimalFormat
 3. Constructors
-3.1: DecimalFormat():
-3.2: DecimalFormat(String pattern):
-3.3: DecimalFormat(String pattern, DecimalFormatSymbols symbols):
+3.1: DecimalFormat(): sử dụng mẫu và ký hiệu mặc định cho miền địa phương FORMAT mặc định.
+3.2: DecimalFormat(String pattern): sử dụng mẫu đã cho và các ký hiệu cho miền địa phương FORMAT mặc định.
+3.3: DecimalFormat(String pattern, DecimalFormatSymbols symbols): sử dụng các mẫu và ký hiệu đã cho.
 4. Method
-4.1: applyLocalizedPattern(String pattern):
-4.2: applyPattern(String pattern):
-4.3: clone():
-4.4: equals(Object obj):
-4.5: format(double number, StringBuffer result, FieldPosition fieldPosition):
-4.6: format(long number, StringBuffer result, FieldPosition fieldPosition):
-4.7: format(Object number, StringBuffer toAppendTo, FieldPosition pos):
-4.8: formatToCharacterIterator(Object obj):
-4.9: getCurrency():
-4.10: getDecimalFormatSymbols():
-4.11: getGroupingSize():
-4.12: getMaximumFractionDigits():
-4.13: getMaximumIntegerDigits():
-4.14: getMinimumFractionDigits():
-4.15: getMinimumIntegerDigits():
-4.16: getMultiplier():
-4.17: getNegativePrefix():
-4.18: getNegativeSuffix():
-4.19: getPositivePrefix():
-4.20: getPositiveSuffix():
-4.21: getRoundingMode():
-4.22: hashCode():
-4.23: isDecimalSeparatorAlwaysShown():
-4.24: isParseBigDecimal():
-4.25: parse(String text, ParsePosition pos):
-4.26: setCurrency(Currency currency):
-4.27: setDecimalFormatSymbols(DecimalFormatSymbols newSymbols):
-4.28: setDecimalSeparatorAlwaysShown(boolean newValue):
-4.29: setGroupingSize(int newValue):
-4.30: setGroupingUsed(boolean newValue):
-4.31: setMaximumFractionDigits(int newValue):
-4.32: setMaximumIntegerDigits(int newValue):
-4.33: setMinimumFractionDigits(int newValue):
-4.34: setMinimumIntegerDigits(int newValue):
-4.35: setMultiplier(int newValue):
-4.36: setNegativePrefix(String newValue):
-4.37: setNegativeSuffix(String newValue):
-4.38: setParseBigDecimal(boolean newValue):
-4.39: setPositivePrefix(String newValue):
-4.40: setPositiveSuffix(String newValue):
-4.41: setRoundingMode(RoundingMode roundingMode):
-4.42: toLocalizedPattern():
-4.30: toPattern():
+4.1: applyLocalizedPattern(String pattern): Áp dụng mẫu đã cho cho đối tượng Format này.
+4.2: applyPattern(String pattern):Áp dụng mẫu đã cho cho đối tượng Format này.
+4.3: clone(): Ghi đè tiêu chuẩn; không thay đổi về ngữ nghĩa.
+4.4: equals(Object obj): Ghi đè bằng
+4.5: format(double number, StringBuffer result, FieldPosition fieldPosition): Định dạng một đôi để tạo ra một chuỗi.
+4.6: format(long number, StringBuffer result, FieldPosition fieldPosition): Định dạng dài để tạo ra một chuỗi.
+4.7: format(Object number, StringBuffer toAppendTo, FieldPosition pos): Định dạng một số và nối thêm văn bản kết quả vào bộ đệm chuỗi đã cho.
+4.8: formatToCharacterIterator(Object obj): Định dạng một đối tượng sản xuất một AttributionCharacterIterator.
+4.9: getCurrency(): Nhận gia tri được sử dụng bởi định dạng thập phân này khi định dạng giá trị.
+4.10: getDecimalFormatSymbols(): Trả về một bản sao của các ký hiệu định dạng thập phân, thường không được thay đổi bởi người lập trình hoặc người dùng
+4.11: getGroupingSize(): Trả lại kích thước nhóm.
+4.12: getMaximumFractionDigits(): Lấy số chữ số tối đa được phép trong phần phân số của một số.
+4.13: getMaximumIntegerDigits(): Lấy số chữ số tối đa được phép trong phần nguyên của một số.
+4.14: getMinimumFractionDigits(): Lấy số chữ số tối thiểu được phép trong phần phân số của một số.
+4.15: getMinimumIntegerDigits(): Lấy số chữ số tối thiểu được phép trong phần nguyên của một số.
+4.16: getMultiplier(): Lấy hệ số nhân để sử dụng theo phần trăm, trên mỗi mille và các định dạng tương tự.
+4.17: getNegativePrefix(): Lấy tiền tố âm.
+4.18: getNegativeSuffix(): Lấy hậu tố phủ định.
+4.19: getPositivePrefix(): Lấy tiền tố tích cực.
+4.20: getPositiveSuffix(): Lấy hậu tố tích cực.
+4.21: getRoundingMode(): Nhận RoundingMode được sử dụng trong DecimalFormat này.
+4.22: hashCode(): Ghi đè mã băm
+4.23: isDecimalSeparatorAlwaysShown(): Cho phép bạn có được hành vi của dấu tách thập phân với số nguyên.
+4.24: isParseBigDecimal(): Trả về việc phương thức parse (java.lang.String, java.text.PudePocation) có trả về BigDecimal hay không.
+4.25: parse(String text, ParsePosition pos): Phân tích văn bản từ một chuỗi để tạo Số.
+4.26: setCurrency(Currency currency): Đặt loại tiền được sử dụng bởi định dạng số này khi định dạng giá trị tiền tệ.
+4.27: setDecimalFormatSymbols(DecimalFormatSymbols newSymbols): Đặt các ký hiệu định dạng thập phân, thường không được người lập trình hoặc người dùng thay đổi.
+4.28: setDecimalSeparatorAlwaysShown(boolean newValue): Cho phép bạn đặt hành vi của dấu tách thập phân với số nguyên.
+4.29: setGroupingSize(int newValue): Đặt kích thước nhóm.
+4.30: setGroupingUsed(boolean newValue): Đặt có hay không nhóm sẽ được sử dụng trong định dạng này.
+4.31: setMaximumFractionDigits(int newValue): Đặt số chữ số tối đa được phép trong phần phân số của một số.
+4.32: setMaximumIntegerDigits(int newValue): Đặt số chữ số tối đa được phép trong phần nguyên của một số.
+4.33: setMinimumFractionDigits(int newValue): Đặt số chữ số tối thiểu được phép trong phần phân số của một số.
+4.34: setMinimumIntegerDigits(int newValue): Đặt số chữ số tối thiểu được phép trong phần nguyên của một số.
+4.35: setMultiplier(int newValue): Đặt hệ số nhân để sử dụng theo phần trăm, trên mỗi mille và các định dạng tương tự.
+4.36: setNegativePrefix(String newValue): Đặt tiền tố âm.
+4.37: setNegativeSuffix(String newValue): Đặt hậu tố phủ định.
+4.38: setParseBigDecimal(boolean newValue): Đặt xem phương thức parse (java.lang.String, java.text.PudePocation) có trả về BigDecimal hay không.
+4.39: setPositivePrefix(String newValue): Đặt tiền tố dương.
+4.40: setPositiveSuffix(String newValue): Đặt hậu tố tích cực.
+4.41: setRoundingMode(RoundingMode roundingMode): Đặt RoundingMode được sử dụng trong DecimalFormat này.
+4.42: toLocalizedPattern(): Tổng hợp một chuỗi mẫu cục bộ đại diện cho trạng thái hiện tại của đối tượng Format này.
+4.30: toPattern(): Tổng hợp một chuỗi mẫu đại diện cho trạng thái hiện tại của đối tượng Format này.
 
 
 
