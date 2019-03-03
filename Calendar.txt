@@ -13,53 +13,53 @@ public abstract class Calendar extends Object implements Serializable, Cloneable
 4.4: clear():thiet lap tat ca cac gia tri cua truong lich va gia tri thoi gian cua Calendar khong xac dinh
 4.5: clear(int field): thiet lap cac gia tri cua truong lich da cho va gia tri thoi gian cua Calendar khong xac dinh
 4.6: clone(): khoi tao va tra ve ban sao chep cua doi tuong nay
-4.7: compareTo(Calendar anotherCalendar)
-4.8: complete()
-4.9: computeFields()
-4.10: computeTime()
-4.11: equals(Object obj)
-4.12: get(int field)
-4.13: getActualMaximum(int field)
-4.14: getActualMinimum(int field)
-4.15: getAvailableCalendarTypes()
-4.16: getAvailableLocales()
-4.17: getCalendarType()
-4.18: getDisplayName(int field, int style, Locale locale)
-4.19: getDisplayNames(int field, int style, Locale locale)
-4.20: getFirstDayOfWeek()
-4.21: getGreatestMinimum(int field)
-4.22: getInstance()
-4.23: getInstance(Locale aLocale)
-4.24: getInstance(TimeZone zone)
-4.25: getInstance(TimeZone zone, Locale aLocale)
-4.26: getLeastMaximum(int field)
-4.27: getMaximum(int field)
-4.28: getMinimalDaysInFirstWeek()
-4.29: getMinimum(int field)
-4.30: getTime()
-4.31: getTimeInMillis()
-4.32: getTimeZone()
-4.33: getWeeksInWeekYear()
-4.34: getWeekYear()
-4.35: hashCode()
-4.36: internalGet(int field)
-4.37: isLenient()
-4.38: isSet(int field)
-4.39: isWeekDateSupported()
-4.40: roll(int field, boolean up)
-4.41: roll(int field, int amount)
-4.42: set(int field, int value)
-4.43: set(int year, int month, int date)
-4.44: set(int year, int month, int date, int hourOfDay, int minute)
-4.45: set(int year, int month, int date, int hourOfDay, int minute, int second)
-4.46: setFirstDayOfWeek(int value)
-4.47: setLenient(boolean lenient)
-4.48: setMinimalDaysInFirstWeek(int value)
-4.49: setTime(Date date)
-4.50: setTimeInMillis(long millis)
-4.51: setTimeZone(TimeZone value)
-4.52: setWeekDate(int weekYear, int weekOfYear, int dayOfWeek)
-4.53: toInstant()
-4.54: toString()
+4.7: compareTo(Calendar anotherCalendar): So sánh các giá trị thời gian (độ lệch mili giây từ Kỷ nguyên) được biểu thị bằng hai đối tượng Lịch.
+4.8: complete(): Điền vào bất kỳ trường không đặt nào trong các trường lịch.
+4.9: computeFields(): Chuyển đổi thời gian giá trị thời gian mili giây hiện tại thành giá trị trường lịch trong các trường 
+4.10: computeTime(): Chuyển đổi các giá trị trường lịch hiện tại trong các trường [] thành thời gian giá trị thời gian mili giây.
+4.11: equals(Object obj): So sánh Lịch này với Đối tượng được chỉ định.
+4.12: get(int field): Trả về giá trị của trường lịch đã cho.
+4.13: getActualMaximum(int field): Trả về giá trị tối đa mà trường lịch đã chỉ định có thể có, với giá trị thời gian của Lịch này.
+4.14: getActualMinimum(int field): Trả về giá trị tối thiểu mà trường lịch đã chỉ định có thể có, với giá trị thời gian của Lịch này.
+4.15: getAvailableCalendarTypes(): Trả về một Tập hợp không thể thay đổi có chứa tất cả các loại lịch được Lịch hỗ trợ trong môi trường thời gian chạy.
+4.16: getAvailableLocales(): Trả về một mảng của tất cả các vị trí mà các phương thức getInstance của lớp này có thể trả về các thể hiện cục bộ.
+4.17: getCalendarType(): Trả về loại lịch của Lịch này.
+4.18: getDisplayName(int field, int style, Locale locale): Trả về chuỗi đại diện của giá trị trường lịch theo kiểu và miền địa phương đã cho.
+4.19: getDisplayNames(int field, int style, Locale locale): Trả về một Bản đồ chứa tất cả các tên của trường lịch theo kiểu và ngôn ngữ đã cho và các giá trị trường tương ứng của chúng.
+4.20: getFirstDayOfWeek():Nhận được những gì ngày đầu tuần là; ví dụ: SUNDAY ở Hoa Kỳ, MONDAY ở Pháp.
+4.21: getGreatestMinimum(int field): Trả về giá trị tối thiểu cao nhất cho trường lịch đã cho của phiên bản Lịch này.
+4.22: getInstance(): Nhận lịch bằng cách sử dụng múi giờ và miền địa phương mặc định.
+4.23: getInstance(Locale aLocale): Nhận lịch bằng múi giờ mặc định và ngôn ngữ được chỉ định.
+4.24: getInstance(TimeZone zone): Nhận lịch bằng cách sử dụng múi giờ được chỉ định và ngôn ngữ mặc định.
+4.25: getInstance(TimeZone zone, Locale aLocale): Nhận lịch với múi giờ và miền địa phương đã chỉ định.
+4.26: getLeastMaximum(int field): Trả về giá trị tối đa thấp nhất cho trường lịch đã cho của phiên bản Lịch này.
+4.27: getMaximum(int field): Trả về giá trị tối đa cho trường lịch đã cho của phiên bản Lịch này.
+4.28: getMinimalDaysInFirstWeek(): Có được những ngày tối thiểu cần thiết trong tuần đầu tiên của năm là gì; ví dụ: nếu tuần đầu tiên được xác định là tuần chứa ngày đầu tiên của tháng đầu tiên của năm, phương thức này trả về 1.
+4.29: getMinimum(int field): Trả về giá trị tối thiểu cho trường lịch đã cho của phiên bản Lịch này.
+4.30: getTime(): Trả về một đối tượng Ngày biểu thị giá trị thời gian của Lịch này (bù mili giây từ Kỷ nguyên ").
+4.31: getTimeInMillis(): Trả về giá trị thời gian của Lịch này tính bằng mili giây.
+4.32: getTimeZone(): Được múi giờ.
+4.33: getWeeksInWeekYear(): Trả về số tuần trong năm trong tuần được đại diện bởi Lịch này.
+4.34: getWeekYear(): Trả về năm trong tuần được đại diện bởi Lịch này.
+4.35: hashCode(): Trả về mã băm cho lịch này.
+4.36: internalGet(int field): Trả về giá trị của trường lịch đã cho.
+4.37: isLenient(): Cho biết liệu giải thích ngày / thời gian có được khoan dung không.
+4.38: isSet(int field): Xác định xem trường lịch đã cho có tập giá trị hay không, bao gồm các trường hợp giá trị được đặt bằng các phép tính trường bên trong được kích hoạt bằng lệnh gọi phương thức get.
+4.39: isWeekDateSupported(): Trả về việc Lịch này có hỗ trợ ngày trong tuần không.
+4.40: roll(int field, boolean up): Thêm hoặc bớt (tăng / giảm) một đơn vị thời gian trên trường thời gian nhất định mà không thay đổi các trường lớn hơn.
+4.41: roll(int field, int amount): Thêm số tiền được chỉ định (đã ký) vào trường lịch được chỉ định mà không thay đổi các trường lớn hơn.
+4.42: set(int field, int value): Đặt trường lịch đã cho thành giá trị đã cho.
+4.43: set(int year, int month, int date): Đặt các giá trị cho các trường lịch NĂM, THÁNG và NGÀY_OF_MONTH.
+4.44: set(int year, int month, int date, int hourOfDay, int minute): Đặt các giá trị cho các trường lịch NĂM, THÁNG, NGÀY_OF_MONTH, HOUR_OF_DAY và PHÚT.
+4.45: set(int year, int month, int date, int hourOfDay, int minute, int second):  Đặt các giá trị cho các trường NĂM, THÁNG, NGÀY_OF_MONTH, HOUR_OF_DAY, MINUTE và THỨ HAI.
+4.46: setFirstDayOfWeek(int value): Đặt ngày đầu tuần là gì; ví dụ: SUNDAY ở Hoa Kỳ, MONDAY ở Pháp.
+4.47: setLenient(boolean lenient): Chỉ định xem có giải thích ngày / giờ hay không.
+4.48: setMinimalDaysInFirstWeek(int value): Đặt những ngày tối thiểu cần thiết trong tuần đầu tiên của năm là g
+4.49: setTime(Date date): Đặt thời gian của Lịch này với Ngày đã cho.
+4.50: setTimeInMillis(long millis): Đặt thời gian hiện tại của Lịch này từ giá trị dài nhất định.
+4.51: setTimeZone(TimeZone value): Đặt múi giờ với giá trị múi giờ đã cho.
+4.52: setWeekDate(int weekYear, int weekOfYear, int dayOfWeek): Đặt ngày của Lịch này với các chỉ định ngày đã cho - tuần năm, tuần trong năm và ngày trong tuần.
+4.53: toInstant(): Chuyển đổi đối tượng này thành tức thì.
+4.54: toString(): Trả về một chuỗi đại diện của lịch này.
 
 
