@@ -9,53 +9,53 @@ public final class StringBuilder extends Object implements Serializable, CharSeq
 3.3: StringBuilder(int capacity)
 3.4: StringBuilder(String str)
 4. Methods:
-4.1: append(boolean b)
-4.2: append(char c)
-4.3: append(char[] str)
-4.4: append(char[] str, int offset, int len)
-4.5: append(CharSequence s)
-4.6: append(CharSequence s, int start, int end)
-4.7: append(double d)
-4.8: append(float f)
-4.9: append(int i)
-4.10: append(long lng)
-4.11: append(Object obj)
-4.12: append(String str)
-4.13: append(StringBuffer sb)
-4.14: appendCodePoint(int codePoint)
-4.15: capacity()
-4.16: charAt(int index)
-4.17: codePointAt(int index)
-4.18: codePointBefore(int index)
-4.19: codePointCount(int beginIndex, int endIndex)
-4.20: delete(int start, int end)
-4.21: deleteCharAt(int index)
-4.22: ensureCapacity(int minimumCapacity)
-4.23: getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)
-4.24: indexOf(String str)
-4.25: indexOf(String str, int fromIndex)
-4.26: insert(int offset, boolean b)
-4.27: insert(int offset, char c)
-4.28: insert(int offset, char[] str)
-4.29: insert(int index, char[] str, int offset, int len)
-4.30: insert(int dstOffset, CharSequence s)
-4.31: insert(int dstOffset, CharSequence s, int start, int end)
-4.32: insert(int offset, double d)
-4.33: insert(int offset, float f)
-4.34: insert(int offset, int i)
-4.35: insert(int offset, long l)
-4.36: insert(int offset, Object obj)
-4.37: insert(int offset, String str)
-4.38: lastIndexOf(String str)
-4.39: lastIndexOf(String str, int fromIndex)
-4.40: length()
-4.41: offsetByCodePoints(int index, int codePointOffset)
-4.42: replace(int start, int end, String str)
-4.43: reverse()
-4.44: setCharAt(int index, char ch)
-4.45: setLength(int newLength)
-4.46: subSequence(int start, int end)
-4.47: substring(int start)
-4.48: substring(int start, int end)
-4.49: toString()
-4.50: trimToSize()
+4.1: append(boolean b) : Nối biểu diễn chuỗi của đối số boolean vào chuỗi.
+4.2: append(char c) : Nối biểu diễn chuỗi của đối số char vào chuỗi này.
+4.3: append(char[] str) : Nối biểu diễn chuỗi của đối số mảng char vào chuỗi này.
+4.4: append(char[] str, int offset, int len) : Nối biểu diễn chuỗi của một phân đoạn của đối số mảng char vào chuỗi này.
+4.5: append(CharSequence s) :Nối chuỗi ký tự đã chỉ định vào Phần bổ sung này.
+4.6: append(CharSequence s, int start, int end): Áp dụng một phần sau của CharSequence được chỉ định cho chuỗi này.
+4.7: append(double d): Nối biểu diễn chuỗi của đối số kép vào chuỗi này.
+4.8: append(float f): Nối biểu diễn chuỗi của đối số float vào chuỗi này.
+4.9: append(int i): Nối biểu diễn chuỗi của đối số int vào chuỗi này.
+4.10: append(long lng): Nối biểu diễn chuỗi của đối số dài vào chuỗi này.
+4.11: append(Object obj): Nối biểu diễn chuỗi của đối số Object.
+4.12: append(String str): Nối chuỗi được chỉ định vào chuỗi ký tự này.
+4.13: append(StringBuffer sb): Nối StringBuffer đã chỉ định vào chuỗi này.
+4.14: appendCodePoint(int codePoint): Nối biểu diễn chuỗi của đối số codePoint vào chuỗi này.
+4.15: capacity() : Trả về công suất hiện tại.
+4.16: charAt(int index): Trả về giá trị char trong chuỗi này tại chỉ mục đã chỉ định.
+4.17: codePointAt(int index): Trả về ký tự (điểm mã Unicode) tại chỉ mục đã chỉ định.
+4.18: codePointBefore(int index): Trả về ký tự (điểm mã Unicode) trước chỉ mục được chỉ định.
+4.19: codePointCount(int beginIndex, int endIndex) :Trả về số lượng điểm mã Unicode trong phạm vi văn bản đã chỉ định của chuỗi này.
+4.20: delete(int start, int end): Loại bỏ các ký tự trong một chuỗi con của chuỗi này.
+4.21: deleteCharAt(int index): Loại bỏ char ở vị trí đã chỉ định trong chuỗi này.
+4.22: ensureCapacity(int minimumCapacity): Đảm bảo rằng công suất ít nhất bằng với mức tối thiểu được chỉ định.
+4.23: getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin): Các ký tự được sao chép từ chuỗi này vào mảng ký tự đích dst.
+4.24: indexOf(String str): Trả về chỉ mục trong chuỗi này của lần xuất hiện đầu tiên của chuỗi con được chỉ định.
+4.25: indexOf(String str, int fromIndex): Trả về chỉ mục trong chuỗi này của lần xuất hiện đầu tiên của chuỗi con được chỉ định, bắt đầu từ chỉ mục đã chỉ định.
+4.26: insert(int offset, boolean b): Chèn biểu diễn chuỗi của đối số boolean vào chuỗi này.
+4.27: insert(int offset, char c): Chèn biểu diễn chuỗi của đối số char vào chuỗi này.
+4.28: insert(int offset, char[] str): Chèn biểu diễn chuỗi của đối số mảng char vào chuỗi này.
+4.29: insert(int index, char[] str, int offset, int len): Chèn biểu diễn chuỗi của một phân đoạn của đối số mảng str vào chuỗi này.
+4.30: insert(int dstOffset, CharSequence s): Chèn CharSequence được chỉ định vào chuỗi này.
+4.31: insert(int dstOffset, CharSequence s, int start, int end):Chèn một phần sau của CharSequence được chỉ định vào chuỗi này.
+4.32: insert(int offset, double d): Chèn biểu diễn chuỗi của đối số kép vào chuỗi này.
+4.33: insert(int offset, float f): Chèn biểu diễn chuỗi của đối số float vào chuỗi này.
+4.34: insert(int offset, int i): Chèn biểu diễn chuỗi của đối số int thứ hai vào chuỗi này.
+4.35: insert(int offset, long l): Chèn biểu diễn chuỗi của đối số dài vào chuỗi này.
+4.36: insert(int offset, Object obj): Chèn biểu diễn chuỗi của đối số Object vào chuỗi ký tự này.
+4.37: insert(int offset, String str): Chèn chuỗi vào chuỗi ký tự này.
+4.38: lastIndexOf(String str): Trả về chỉ mục trong chuỗi này về sự xuất hiện ngoài cùng bên phải của chuỗi con được chỉ định.
+4.39: lastIndexOf(String str, int fromIndex): Trả về chỉ mục trong chuỗi này của lần xuất hiện cuối cùng của chuỗi con được chỉ định.
+4.40: length(): Trả về độ dài (số ký tự).
+4.41: offsetByCodePoints(int index, int codePointOffset): Trả về chỉ mục trong chuỗi này được bù từ chỉ mục đã cho bởi các điểm mã codePointPackset.
+4.42: replace(int start, int end, String str): Thay thế các ký tự trong một chuỗi con của chuỗi này bằng các ký tự trong Chuỗi được chỉ định.
+4.43: reverse(): Làm cho chuỗi ký tự này được thay thế bằng đảo ngược của chuỗi.
+4.44: setCharAt(int index, char ch): Ký tự tại chỉ mục được chỉ định được đặt thành ch.
+4.45: setLength(int newLength): Đặt độ dài của chuỗi ký tự.
+4.46: subSequence(int start, int end): Trả về một chuỗi ký tự mới là một chuỗi con của chuỗi này.
+4.47: substring(int start): Trả về một Chuỗi mới có chứa một chuỗi các ký tự hiện có trong chuỗi ký tự này.
+4.48: substring(int start, int end): Trả về một Chuỗi mới chứa một chuỗi các ký tự hiện có trong chuỗi này.
+4.49: toString(): Trả về một chuỗi đại diện cho dữ liệu trong chuỗi này.
+4.50: trimToSize(): Nỗ lực giảm lưu trữ được sử dụng cho chuỗi ký tự.
